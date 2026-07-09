@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Jatin Mahavir Sharma</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+  .contact-grid{display:grid; grid-template-columns:0.9fr 1.1fr; gap:50px; align-items:start;}
+  @media (max-width:900px){ .contact-grid{grid-template-columns:1fr;} }
+  .contact-link{
+    display:flex; align-items:center; gap:14px; padding:16px 18px; border:1px solid var(--line);
+    border-radius:6px; margin-bottom:14px; transition:border-color 0.2s ease, background 0.2s ease;
+  }
+  .contact-link:hover{border-color:var(--blue-dim); background:var(--panel-2);}
+  .contact-link .c-icon{
+    width:36px; height:36px; border-radius:50%; background:var(--panel-2); display:flex;
+    align-items:center; justify-content:center; font-size:14px; flex-shrink:0;
+  }
+  .contact-link .c-label{font-size:12px; color:var(--muted); text-transform:uppercase; letter-spacing:0.05em;}
+  .contact-link .c-value{font-size:14.5px; font-weight:500; margin-top:2px;}
+  .form-field{margin-bottom:18px;}
+  .form-field label{display:block; font-size:12px; color:var(--muted); margin-bottom:8px; text-transform:uppercase; letter-spacing:0.05em;}
+  .form-field input, .form-field textarea{
+    width:100%; background:var(--bg); border:1px solid var(--line); color:var(--text);
+    padding:13px 15px; border-radius:4px; font-family:'Inter',sans-serif; font-size:14px; transition:border-color 0.2s ease;
+  }
+  .form-field input:focus, .form-field textarea:focus{outline:none; border-color:var(--accent);}
+  .form-field textarea{resize:vertical; min-height:110px;}
+</style>
+</head>
+<body>
+<div class="bg-glow"></div>
+<div class="grain"></div>
+
+<header class="editor-bar">
+  <div class="tab-row-top">
+    <div class="brand">
+      <div class="dot3"><span></span><span></span><span></span></div>
+      jatin-sharma — portfolio
+    </div>
+    <button class="menu-btn" aria-label="Menu">☰</button>
+  </div>
+  <nav class="tabs">
+    <a class="tab" href="index.html"><span class="ext-dot tsx"></span>home.tsx</a>
+    <a class="tab" href="about.html"><span class="ext-dot md"></span>about.md</a>
+    <a class="tab" href="projects.html"><span class="ext-dot json"></span>projects.json</a>
+    <a class="tab" href="skills.html"><span class="ext-dot md"></span>skills.md</a>
+    <a class="tab active" href="contact.html"><span class="ext-dot sh"></span>contact.sh</a>
+  </nav>
+</header>
+
+<main>
+  <section class="wrap">
+    <div class="section-head reveal">
+      <div class="prompt mono"><span class="caret">&gt;</span> ./contact.sh</div>
+      <h1>Let's talk.</h1>
+      <p>Open to internships, collaborations, or just a conversation about what I'm building. Reach out however's easiest.</p>
+    </div>
+
+    <div class="contact-grid reveal" style="padding-bottom:100px;">
+      <div>
+        <!-- ⚠️ Replace the placeholders below with your real email and LinkedIn URL before publishing -->
+        <a href="mailto:your.email@example.com" class="contact-link">
+          <div class="c-icon">✉</div>
+          <div>
+            <div class="c-label">Email</div>
+            <div class="c-value">your.email@example.com</div>
+          </div>
+        </a>
+        <a href="https://linkedin.com/in/your-linkedin-handle" target="_blank" rel="noopener" class="contact-link">
+          <div class="c-icon">in</div>
+          <div>
+            <div class="c-label">LinkedIn</div>
+            <div class="c-value">linkedin.com/in/your-handle</div>
+          </div>
+        </a>
+        <a href="https://jatin-s106.github.io/lancehub/" target="_blank" rel="noopener" class="contact-link">
+          <div class="c-icon">↗</div>
+          <div>
+            <div class="c-label">Live Project</div>
+            <div class="c-value">LanceFree</div>
+          </div>
+        </a>
+        <p style="font-size:12.5px; color:var(--muted); margin-top:18px; line-height:1.6;">
+          Note: the email and LinkedIn links above are placeholders — swap in your real details in <code style="color:var(--accent);">contact.html</code> before this goes live.
+        </p>
+      </div>
+
+      <div class="panel">
+        <div class="mono" style="font-size:12px; color:var(--muted); margin-bottom:20px;">// send a message</div>
+        <form id="contact-form">
+          <div class="form-field">
+            <label for="name">Name</label>
+            <input id="name" type="text" placeholder="Your name" required>
+          </div>
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="you@email.com" required>
+          </div>
+          <div class="form-field">
+            <label for="msg">Message</label>
+            <textarea id="msg" placeholder="What's on your mind?"></textarea>
+          </div>
+          <button type="submit" class="btn-primary" style="border:none; cursor:pointer; width:100%;">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="status-bar">
+  <div class="status-left">
+    <span><span class="live-dot"></span> available for opportunities</span>
+    <span class="mono">⎇ main</span>
+    <span class="mono">UTF-8</span>
+  </div>
+  <div class="status-right">
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <span>© 2026 Jatin Mahavir Sharma</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

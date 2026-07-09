@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects — Jatin Mahavir Sharma</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+  .proj-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:22px;}
+  @media (max-width:980px){ .proj-grid{grid-template-columns:repeat(2,1fr);} }
+  @media (max-width:640px){ .proj-grid{grid-template-columns:1fr;} }
+  .proj-card{grid-column:span 3;}
+  @media (max-width:980px){ .proj-card{grid-column:span 2;} }
+  @media (max-width:640px){ .proj-card{grid-column:span 1;} }
+  .placeholder-card{
+    border:1px dashed var(--line); border-radius:6px; padding:28px;
+    display:flex; flex-direction:column; align-items:flex-start; justify-content:center;
+    min-height:220px; color:var(--muted);
+  }
+</style>
+</head>
+<body>
+<div class="bg-glow"></div>
+<div class="grain"></div>
+
+<header class="editor-bar">
+  <div class="tab-row-top">
+    <div class="brand">
+      <div class="dot3"><span></span><span></span><span></span></div>
+      jatin-sharma — portfolio
+    </div>
+    <button class="menu-btn" aria-label="Menu">☰</button>
+  </div>
+  <nav class="tabs">
+    <a class="tab" href="index.html"><span class="ext-dot tsx"></span>home.tsx</a>
+    <a class="tab" href="about.html"><span class="ext-dot md"></span>about.md</a>
+    <a class="tab active" href="projects.html"><span class="ext-dot json"></span>projects.json</a>
+    <a class="tab" href="skills.html"><span class="ext-dot md"></span>skills.md</a>
+    <a class="tab" href="contact.html"><span class="ext-dot sh"></span>contact.sh</a>
+  </nav>
+</header>
+
+<main>
+  <section class="wrap">
+    <div class="section-head reveal">
+      <div class="prompt mono"><span class="caret">&gt;</span> ls ./projects</div>
+      <h1>Things I've built.</h1>
+      <p>One live platform so far, with more on the way. This page grows as I ship more.</p>
+    </div>
+
+    <div class="proj-grid" style="padding-bottom:100px;">
+
+      <div class="reveal proj-card panel" style="display:grid; grid-template-columns:1fr 1fr; gap:40px; align-items:center;">
+        <div>
+          <span class="mono" style="font-size:11px; color:var(--green); letter-spacing:0.05em;">FEATURED · LIVE</span>
+          <h2 style="font-size:26px; margin-top:12px; margin-bottom:14px; font-weight:700;">LanceFree</h2>
+          <p style="color:var(--muted); font-size:14.5px; line-height:1.7; margin-bottom:18px;">
+            A freelancing platform built from scratch, with a working login and account system at its core.
+            The goal was to design something close to a real product — not just a class assignment — covering
+            the front end, the account flow, and the overall structure a freelance marketplace needs.
+          </p>
+          <div style="display:flex; gap:8px; flex-wrap:wrap; margin-bottom:22px;">
+            <span class="mono" style="font-size:11px; border:1px solid var(--line); padding:5px 11px; border-radius:20px; color:var(--muted);">Web Platform</span>
+            <span class="mono" style="font-size:11px; border:1px solid var(--line); padding:5px 11px; border-radius:20px; color:var(--muted);">Auth &amp; Accounts</span>
+            <span class="mono" style="font-size:11px; border:1px solid var(--line); padding:5px 11px; border-radius:20px; color:var(--muted);">Personal Build</span>
+          </div>
+          <div style="display:flex; gap:14px; flex-wrap:wrap;">
+            <a href="https://jatin-s106.github.io/lancehub/" target="_blank" rel="noopener" class="btn-primary" style="padding:11px 22px; font-size:13px;">Live Demo ↗</a>
+          </div>
+        </div>
+        <div style="border:1px dashed var(--line); border-radius:6px; padding:26px; background:var(--panel-2);">
+          <div class="mono" style="font-size:12px; color:var(--muted); margin-bottom:14px;">// lancefree/README</div>
+          <div class="mono" style="font-size:13px; line-height:2; color:var(--text);">
+            <div><span style="color:var(--accent);">●</span> name: LanceFree (LanceHub)</div>
+            <div><span style="color:var(--blue);">●</span> type: freelance marketplace</div>
+            <div><span style="color:var(--green);">●</span> status: deployed &amp; live</div>
+            <div><span style="color:#B892FF;">●</span> core feature: login system</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal placeholder-card">
+        <span class="mono" style="font-size:12px; color:var(--accent); margin-bottom:8px;">+ NEXT BUILD</span>
+        <div style="font-weight:600; color:var(--text); margin-bottom:6px;">Add your next project here</div>
+        <div style="font-size:13px; line-height:1.6;">This slot is ready for whatever you build next — swap this text for the real thing.</div>
+      </div>
+
+      <div class="reveal placeholder-card">
+        <span class="mono" style="font-size:12px; color:var(--blue); margin-bottom:8px;">+ NEXT BUILD</span>
+        <div style="font-weight:600; color:var(--text); margin-bottom:6px;">Another project slot</div>
+        <div style="font-size:13px; line-height:1.6;">Use this card for a coursework project, a hackathon build, or anything else worth showing.</div>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer class="status-bar">
+  <div class="status-left">
+    <span><span class="live-dot"></span> available for opportunities</span>
+    <span class="mono">⎇ main</span>
+    <span class="mono">UTF-8</span>
+  </div>
+  <div class="status-right">
+    <a href="contact.html">Contact</a>
+    <a href="skills.html">Skills</a>
+    <span>© 2026 Jatin Mahavir Sharma</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

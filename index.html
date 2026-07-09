@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jatin Mahavir Sharma — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="bg-glow"></div>
+<div class="grain"></div>
+
+<header class="editor-bar">
+  <div class="tab-row-top">
+    <div class="brand">
+      <div class="dot3"><span></span><span></span><span></span></div>
+      jatin-sharma — portfolio
+    </div>
+    <button class="menu-btn" aria-label="Menu">☰</button>
+  </div>
+  <nav class="tabs">
+    <a class="tab active" href="index.html"><span class="ext-dot tsx"></span>home.tsx</a>
+    <a class="tab" href="about.html"><span class="ext-dot md"></span>about.md</a>
+    <a class="tab" href="projects.html"><span class="ext-dot json"></span>projects.json</a>
+    <a class="tab" href="skills.html"><span class="ext-dot md"></span>skills.md</a>
+    <a class="tab" href="contact.html"><span class="ext-dot sh"></span>contact.sh</a>
+  </nav>
+</header>
+
+<main>
+  <section class="wrap" style="padding-top:90px; padding-bottom:60px; min-height:80vh; display:flex; align-items:center;">
+    <div style="width:100%;">
+      <div class="prompt mono"><span class="caret">&gt;</span> <span id="type-target" data-text="whoami"></span><span style="color:var(--accent);">_</span></div>
+      <h1 class="mono" style="font-size:clamp(2.4rem,6vw,4.6rem); font-weight:700; letter-spacing:-0.02em; line-height:1.05;">
+        Jatin Mahavir Sharma
+      </h1>
+      <p style="margin-top:18px; font-size:18px; color:var(--blue); font-weight:500;">Third-year BSCIT Student · Aspiring Full-Stack Developer</p>
+      <p style="margin-top:22px; max-width:56ch; font-size:16px; line-height:1.75; color:var(--muted);">
+        I learn by building. Most of what I know about web development didn't come from a textbook —
+        it came from shipping a real project, breaking it, and fixing it again. Right now that project is
+        <strong style="color:var(--text);">LanceFree</strong>, a freelancing platform I built from the ground up.
+      </p>
+      <div style="display:flex; gap:16px; margin-top:36px; flex-wrap:wrap;">
+        <a href="projects.html" class="btn-primary">View Projects</a>
+        <a href="contact.html" class="btn-ghost">Get in Touch</a>
+      </div>
+
+      <div class="reveal" style="display:flex; gap:48px; margin-top:70px; flex-wrap:wrap; border-top:1px solid var(--line); padding-top:26px;">
+        <div>
+          <div class="mono" style="font-size:24px; color:var(--accent);">3rd Year</div>
+          <div style="font-size:12px; color:var(--muted); margin-top:6px; max-width:16ch;">BSCIT program, currently in progress</div>
+        </div>
+        <div>
+          <div class="mono" style="font-size:24px; color:var(--accent);">6+</div>
+          <div style="font-size:12px; color:var(--muted); margin-top:6px; max-width:16ch;">Languages &amp; tools in active use</div>
+        </div>
+        <div>
+          <div class="mono" style="font-size:24px; color:var(--accent);">1</div>
+          <div style="font-size:12px; color:var(--muted); margin-top:6px; max-width:16ch;">Full platform shipped and live</div>
+        </div>
+        <div>
+          <div class="mono" style="font-size:24px; color:var(--accent);">Always</div>
+          <div style="font-size:12px; color:var(--muted); margin-top:6px; max-width:16ch;">Learning something new</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap" style="padding-bottom:100px;">
+    <div class="reveal panel" style="display:grid; grid-template-columns:1fr 1fr; gap:40px; align-items:center;">
+      <div>
+        <span class="mono" style="font-size:11px; color:var(--green); letter-spacing:0.05em;">FEATURED BUILD</span>
+        <h2 style="font-size:26px; margin-top:12px; margin-bottom:14px; font-weight:700;">LanceFree</h2>
+        <p style="color:var(--muted); font-size:14.5px; line-height:1.7; margin-bottom:20px;">
+          A freelancing platform with a working login and account system, built to connect freelancers
+          with clients — designed and coded from scratch as a way to actually apply what I've learned in class.
+        </p>
+        <div style="display:flex; gap:14px; flex-wrap:wrap;">
+          <a href="https://jatin-s106.github.io/lancehub/" target="_blank" rel="noopener" class="btn-primary" style="padding:11px 22px; font-size:13px;">Live Demo ↗</a>
+          <a href="projects.html" class="btn-ghost" style="padding:11px 22px; font-size:13px;">Full Details</a>
+        </div>
+      </div>
+      <div style="border:1px dashed var(--line); border-radius:6px; padding:26px; background:var(--panel-2);">
+        <div class="mono" style="font-size:12px; color:var(--muted); margin-bottom:10px;">$ lancefree --status</div>
+        <div class="mono" style="font-size:13px; line-height:2; color:var(--text);">
+          <div><span style="color:var(--green);">●</span> status: <span style="color:var(--green);">live</span></div>
+          <div><span style="color:var(--blue);">●</span> type: freelance marketplace</div>
+          <div><span style="color:var(--accent);">●</span> core: auth &amp; account system</div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="status-bar">
+  <div class="status-left">
+    <span><span class="live-dot"></span> available for opportunities</span>
+    <span class="mono">⎇ main</span>
+    <span class="mono">UTF-8</span>
+  </div>
+  <div class="status-right">
+    <a href="contact.html">Contact</a>
+    <a href="projects.html">Projects</a>
+    <span>© 2026 Jatin Mahavir Sharma</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
